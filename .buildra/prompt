@@ -1,8 +1,12 @@
-CRITICAL Astro WebContainer Rules:
-- package.json MUST have "type": "module"
-- astro.config.mjs uses ESM exports
-- ALWAYS use `npm run dev` to start — never use bare `astro dev`
-- Pages go in src/pages/ directory (file-based routing)
-- Components go in src/components/
-- Layouts go in src/layouts/
-- Astro components use .astro extension with frontmatter (---) blocks
+This is an Astro project with Tailwind CSS (via @astrojs/tailwind integration).
+
+STYLING RULES:
+- Use Tailwind CSS utility classes for ALL styling
+- Tailwind is auto-configured via the @astrojs/tailwind integration
+- Do NOT use <style> blocks for layout/spacing — use Tailwind classes
+- Follow mobile-first responsive design (sm:, md:, lg: breakpoints)
+
+IMPORTANT:
+- Always run `npm install && npm run dev` to start
+- Use .astro files for pages and components
+- Never use `astro dev` directly — always use `npm run dev`
