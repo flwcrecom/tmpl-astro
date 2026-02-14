@@ -1,0 +1,8 @@
+CRITICAL Astro WebContainer Rules:
+- package.json MUST have "type": "module"
+- astro.config.mjs uses ESM exports
+- ALWAYS use `npm run dev` to start — never use bare `astro dev`
+- Pages go in src/pages/ directory (file-based routing)
+- Components go in src/components/
+- Layouts go in src/layouts/
+- Astro components use .astro extension with frontmatter (---) blocks
